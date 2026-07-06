@@ -610,6 +610,112 @@ section {
   color: #3776ab;
 }
 
+/* Projects Section */
+.projects-intro {
+  text-align: center;
+  margin-top: -3.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.projects-subtitle {
+  color: var(--text-muted);
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+}
+
+.project-grid {
+  display: flex;
+  justify-content: center;
+}
+
+.project-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 3rem;
+  max-width: 800px;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: var(--transition);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--border-hover);
+  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.15);
+}
+
+.project-content h3 {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.project-description {
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.project-tech {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.tech-tag {
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--primary);
+  padding: 0.4rem 1rem;
+  border-radius: 100px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+.project-features {
+  margin-bottom: 2.5rem;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.project-features h4 {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.project-features ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.project-features li {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.project-features li i {
+  color: var(--primary);
+  font-size: 0.85rem;
+  margin-top: 0.2rem;
+}
+
+.project-actions {
+  display: flex;
+  gap: 1rem;
+}
+
 /* Contact Section */
 .contact-wrapper {
   display: grid;
@@ -954,6 +1060,15 @@ section {
     position: static;
   }
 
+  /* Projects Section */
+  .project-card {
+    padding: 2rem;
+  }
+  
+  .projects-subtitle {
+    font-size: 0.95rem;
+  }
+
   /* Contact Section */
   .contact-wrapper {
     grid-template-columns: 1fr;
@@ -1013,6 +1128,16 @@ section {
 
   .skill-card {
     padding: 1.5rem 1rem;
+  }
+
+  .project-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .project-actions .btn {
+    width: 100%;
+    justify-content: center;
   }
 
   .footer-container {
